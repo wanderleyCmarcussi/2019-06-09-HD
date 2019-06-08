@@ -15,6 +15,7 @@
 		13F6D5DD22ABF19B007C0853 /* Contato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F6D5DC22ABF19B007C0853 /* Contato.swift */; };
 		13F6D5E022ABF3DC007C0853 /* Contatos.json in Resources */ = {isa = PBXBuildFile; fileRef = 13F6D5DF22ABF3DC007C0853 /* Contatos.json */; };
 		13F6D5E322ABF5CE007C0853 /* ContatosDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F6D5E222ABF5CE007C0853 /* ContatosDAO.swift */; };
+		13F6D5E522AC00B6007C0853 /* ContatosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F6D5E422AC00B6007C0853 /* ContatosController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		13F6D5DC22ABF19B007C0853 /* Contato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contato.swift; sourceTree = "<group>"; };
 		13F6D5DF22ABF3DC007C0853 /* Contatos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contatos.json; sourceTree = "<group>"; };
 		13F6D5E222ABF5CE007C0853 /* ContatosDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosDAO.swift; sourceTree = "<group>"; };
+		13F6D5E422AC00B6007C0853 /* ContatosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,6 @@
 				13F6D5DA22ABF09E007C0853 /* View */,
 				13F6D5DB22ABF0A7007C0853 /* Model */,
 				13F6D5AB22ABD96C007C0853 /* AppDelegate.swift */,
-				13F6D5AD22ABD96C007C0853 /* ViewController.swift */,
 				13F6D5AF22ABD96C007C0853 /* Main.storyboard */,
 				13F6D5B222ABD96F007C0853 /* Assets.xcassets */,
 				13F6D5B422ABD96F007C0853 /* LaunchScreen.storyboard */,
@@ -113,6 +114,7 @@
 		13F6D5D922ABF08C007C0853 /* Contrtoller */ = {
 			isa = PBXGroup;
 			children = (
+				13F6D5E422AC00B6007C0853 /* ContatosController.swift */,
 			);
 			path = Contrtoller;
 			sourceTree = "<group>";
@@ -120,6 +122,7 @@
 		13F6D5DA22ABF09E007C0853 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				13F6D5AD22ABD96C007C0853 /* ViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			files = (
 				13F6D5DD22ABF19B007C0853 /* Contato.swift in Sources */,
 				13F6D5AE22ABD96C007C0853 /* ViewController.swift in Sources */,
+				13F6D5E522AC00B6007C0853 /* ContatosController.swift in Sources */,
 				13F6D5E322ABF5CE007C0853 /* ContatosDAO.swift in Sources */,
 				13F6D5AC22ABD96C007C0853 /* AppDelegate.swift in Sources */,
 			);

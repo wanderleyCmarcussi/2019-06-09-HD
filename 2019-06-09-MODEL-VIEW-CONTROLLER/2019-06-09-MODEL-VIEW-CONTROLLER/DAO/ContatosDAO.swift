@@ -11,17 +11,17 @@ import Foundation
 
 class ContatosDAO {
     
-    typealias completion <T> = (_ result: T, _ failure: Bool? ) -> Void
+    typealias completion <T> = (_ result: T, _ failure: Bool ) -> Void
     
     
     func getListContatos(completion: @escaping completion<[Contato?]>) {
         
-        if let path = Bundle.main.path(forResource: "contatos", ofType: "json") {
+        if let path = Bundle.main.path(forResource: "Contatos", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
                 
-                if let _jsonResult = jsonResult as? Dictionary<String, AnyObject> {
+                if let _jsonResult = jsonResult as? [Dictionary<String, AnyObject>] {
                     // do stuff
                     print("Funcionou")
                     print (_jsonResult)
