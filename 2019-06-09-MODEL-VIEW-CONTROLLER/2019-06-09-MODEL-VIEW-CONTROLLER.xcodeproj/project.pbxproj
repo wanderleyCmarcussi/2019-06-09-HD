@@ -12,8 +12,9 @@
 		13F6D5B122ABD96C007C0853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F6D5AF22ABD96C007C0853 /* Main.storyboard */; };
 		13F6D5B322ABD96F007C0853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13F6D5B222ABD96F007C0853 /* Assets.xcassets */; };
 		13F6D5B622ABD96F007C0853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F6D5B422ABD96F007C0853 /* LaunchScreen.storyboard */; };
-		13F6D5C122ABD96F007C0853 /* _019_06_09_MODEL_VIEW_CONTROLLERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F6D5C022ABD96F007C0853 /* _019_06_09_MODEL_VIEW_CONTROLLERTests.swift */; };
-		13F6D5CC22ABD96F007C0853 /* _019_06_09_MODEL_VIEW_CONTROLLERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F6D5CB22ABD96F007C0853 /* _019_06_09_MODEL_VIEW_CONTROLLERUITests.swift */; };
+		13F6D5DD22ABF19B007C0853 /* Contato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F6D5DC22ABF19B007C0853 /* Contato.swift */; };
+		13F6D5E022ABF3DC007C0853 /* Contatos.json in Resources */ = {isa = PBXBuildFile; fileRef = 13F6D5DF22ABF3DC007C0853 /* Contatos.json */; };
+		13F6D5E322ABF5CE007C0853 /* ContatosDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F6D5E222ABF5CE007C0853 /* ContatosDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +43,10 @@
 		13F6D5B522ABD96F007C0853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13F6D5B722ABD96F007C0853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13F6D5BC22ABD96F007C0853 /* 2019-06-09-MODEL-VIEW-CONTROLLERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "2019-06-09-MODEL-VIEW-CONTROLLERTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13F6D5C022ABD96F007C0853 /* _019_06_09_MODEL_VIEW_CONTROLLERTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _019_06_09_MODEL_VIEW_CONTROLLERTests.swift; sourceTree = "<group>"; };
-		13F6D5C222ABD96F007C0853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13F6D5C722ABD96F007C0853 /* 2019-06-09-MODEL-VIEW-CONTROLLERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "2019-06-09-MODEL-VIEW-CONTROLLERUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13F6D5CB22ABD96F007C0853 /* _019_06_09_MODEL_VIEW_CONTROLLERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _019_06_09_MODEL_VIEW_CONTROLLERUITests.swift; sourceTree = "<group>"; };
-		13F6D5CD22ABD96F007C0853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13F6D5DC22ABF19B007C0853 /* Contato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contato.swift; sourceTree = "<group>"; };
+		13F6D5DF22ABF3DC007C0853 /* Contatos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contatos.json; sourceTree = "<group>"; };
+		13F6D5E222ABF5CE007C0853 /* ContatosDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				13F6D5AA22ABD96C007C0853 /* 2019-06-09-MODEL-VIEW-CONTROLLER */,
-				13F6D5BF22ABD96F007C0853 /* 2019-06-09-MODEL-VIEW-CONTROLLERTests */,
-				13F6D5CA22ABD96F007C0853 /* 2019-06-09-MODEL-VIEW-CONTROLLERUITests */,
 				13F6D5A922ABD96C007C0853 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +95,11 @@
 		13F6D5AA22ABD96C007C0853 /* 2019-06-09-MODEL-VIEW-CONTROLLER */ = {
 			isa = PBXGroup;
 			children = (
+				13F6D5E122ABF5B1007C0853 /* DAO */,
+				13F6D5DE22ABF382007C0853 /* Mock */,
+				13F6D5D922ABF08C007C0853 /* Contrtoller */,
+				13F6D5DA22ABF09E007C0853 /* View */,
+				13F6D5DB22ABF0A7007C0853 /* Model */,
 				13F6D5AB22ABD96C007C0853 /* AppDelegate.swift */,
 				13F6D5AD22ABD96C007C0853 /* ViewController.swift */,
 				13F6D5AF22ABD96C007C0853 /* Main.storyboard */,
@@ -107,22 +110,42 @@
 			path = "2019-06-09-MODEL-VIEW-CONTROLLER";
 			sourceTree = "<group>";
 		};
-		13F6D5BF22ABD96F007C0853 /* 2019-06-09-MODEL-VIEW-CONTROLLERTests */ = {
+		13F6D5D922ABF08C007C0853 /* Contrtoller */ = {
 			isa = PBXGroup;
 			children = (
-				13F6D5C022ABD96F007C0853 /* _019_06_09_MODEL_VIEW_CONTROLLERTests.swift */,
-				13F6D5C222ABD96F007C0853 /* Info.plist */,
 			);
-			path = "2019-06-09-MODEL-VIEW-CONTROLLERTests";
+			path = Contrtoller;
 			sourceTree = "<group>";
 		};
-		13F6D5CA22ABD96F007C0853 /* 2019-06-09-MODEL-VIEW-CONTROLLERUITests */ = {
+		13F6D5DA22ABF09E007C0853 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				13F6D5CB22ABD96F007C0853 /* _019_06_09_MODEL_VIEW_CONTROLLERUITests.swift */,
-				13F6D5CD22ABD96F007C0853 /* Info.plist */,
 			);
-			path = "2019-06-09-MODEL-VIEW-CONTROLLERUITests";
+			path = View;
+			sourceTree = "<group>";
+		};
+		13F6D5DB22ABF0A7007C0853 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13F6D5DC22ABF19B007C0853 /* Contato.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13F6D5DE22ABF382007C0853 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				13F6D5DF22ABF3DC007C0853 /* Contatos.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		13F6D5E122ABF5B1007C0853 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				13F6D5E222ABF5CE007C0853 /* ContatosDAO.swift */,
+			);
+			path = DAO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +254,7 @@
 			files = (
 				13F6D5B622ABD96F007C0853 /* LaunchScreen.storyboard in Resources */,
 				13F6D5B322ABD96F007C0853 /* Assets.xcassets in Resources */,
+				13F6D5E022ABF3DC007C0853 /* Contatos.json in Resources */,
 				13F6D5B122ABD96C007C0853 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,7 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13F6D5DD22ABF19B007C0853 /* Contato.swift in Sources */,
 				13F6D5AE22ABD96C007C0853 /* ViewController.swift in Sources */,
+				13F6D5E322ABF5CE007C0853 /* ContatosDAO.swift in Sources */,
 				13F6D5AC22ABD96C007C0853 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +291,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13F6D5C122ABD96F007C0853 /* _019_06_09_MODEL_VIEW_CONTROLLERTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +298,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13F6D5CC22ABD96F007C0853 /* _019_06_09_MODEL_VIEW_CONTROLLERUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
